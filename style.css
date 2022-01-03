@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-color: black;
+}
+h1{
+    text-transform: uppercase;
+    padding-bottom:20px;
+    font-size: 4rem;
+}
+p{
+    width: 60vw;
+    font-size: 1.5rem;
+}
