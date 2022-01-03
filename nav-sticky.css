@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+.section-main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://media.istockphoto.com/photos/colorful-background-picture-id1280385511?b=1&k=20&m=1280385511&s=170667a&w=0&h=4-KMkIqgyw2gTBMTBbYZVZoidwRsWZzr3q0xyUDYhas=) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px ;
+}
+
+.section-main h1{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 60px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.2s;
+}
+
+header.sticky{
+    background: #001018;
+    padding: 15px 100px;
+}
+
+header .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+    transition-property: color, background;
+}
+
+header .menu a:hover{
+    color: black;
+    background: white;
+}
+
+header .btn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.section-two{
+    min-height: 100vh;
+    background: #001018;
+    padding: 20px 100px;
+}
+
+.section-two h2{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+.section-two p{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+@media (max-width: 1060px){
+    header .btn{
+        display: block;
+    }
+
+    header .menu{
+        position: fixed;
+        background: #001018;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: .5s;
+        transition-property: right;
+    }
+
+    header .menu.active{
+        right: 0;
+    }
+
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 25px;
+    }
+
+    header .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+}
