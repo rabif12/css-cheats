@@ -1,33 +1,28 @@
-*{
-    box-sizing: border-box;
+body {
     margin: 0;
-    padding: 0;
-}
-
-body{
     height: 100vh;
     font-size: 5em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
-section{
+section {
     height: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-items: middle;
     place-items: center;
     height: 100vh;
 }
 
-span{
+span {
     width: 110px;
     height: 110px;
     position: absolute;
@@ -35,10 +30,4 @@ span{
     left: 0;
     background: black;
     border-radius: 50%;
-}
-
-.section-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
