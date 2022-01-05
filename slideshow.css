@@ -84,3 +84,38 @@ img{
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(212, 212, 212);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(212, 212, 212);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(212, 212, 212);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(212, 212, 212);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(212, 212, 212);
+}
