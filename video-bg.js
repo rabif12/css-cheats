@@ -1,3 +1,5 @@
+//just here to check if the js is conneted to the home page.
+
 var counter = 1;
 window.addEventListener('click', () => {
     console.log("working " + counter);
