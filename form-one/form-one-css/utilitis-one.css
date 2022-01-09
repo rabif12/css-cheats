@@ -34,6 +34,44 @@
     transform: scale(.98);
 }
 
+/*background & colored button */
+.bg-primary,
+.btn-primary{
+    background-color: var(--primairy-color);
+    color: #fff;
+}
+.bg-dark,
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-light,
+.btn-light{
+    background-color: var(--light-color);
+    color: #333;
+}
+
+/*text-sizes*/
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -144,4 +182,11 @@
 
 .p-5{
     margin: 4rem;
+}
+
+.text-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
