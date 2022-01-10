@@ -12,6 +12,11 @@
     --light-color:#f4f4f4;
 }
 
+:root {
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
 body{
     color: #333;
     line-height: 1.6;
@@ -222,4 +227,25 @@ img{
 /*footer*/
 .footer .social a{
     margin: 0 10px;
+}
+
+/* Docs */
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+  font-weight: bold;
 }
