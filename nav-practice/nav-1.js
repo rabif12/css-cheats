@@ -4,8 +4,10 @@ window.addEventListener('click', () => {
     counter++;
 });
 
-var clicker = document.querySelector('.clicker')
+var clicker = document.querySelector('.clicker');
+var container = document.querySelector('.container');
 
 clicker.addEventListener('click', () => {
-    clicker.classList.toggle('active')
+    container.classList.toggle('active');
+    container.classList.toggle('container');
 });
