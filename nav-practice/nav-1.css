@@ -3,3 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
+.clicker{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+
+.container{
+   display: none;
+}
+
+.active{
+    position: absolute;
+    right: 400px;
+    top: 0;
+    background-color: blue;
+}
