@@ -27,7 +27,7 @@
     position: absolute;
     height: 600px;
     width: 400px;
-    right: 400px;
+    right: 0px;
     top: 0;
     background-color: blue;
 }
