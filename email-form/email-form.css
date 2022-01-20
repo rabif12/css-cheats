@@ -88,6 +88,7 @@ button[type="submit"]:hover{
     animation: status 4s ease forwards;
 }
 
+/*========== key frames dont work=========*/
 @keyframes status{
     0%{
         opacity: 1;
