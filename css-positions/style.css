@@ -54,7 +54,7 @@
     height: 100vh;
     background-color: darkcyan;
 }
-
+/*===== static positions are default html positions=====*/
 .sticky{
     height: 100px;
     width: 100px;
