@@ -8,6 +8,7 @@
 
 --root{
     --poppins-font:font-family: 'Poppins', sans-serif;
+    --flex: display:flex, justify-content: center, align-items: center;
 }
 
 .max-width{
@@ -46,4 +47,10 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+}
+.section{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: var(--flex);
 }
