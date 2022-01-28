@@ -20,11 +20,18 @@
 /*==========navbar styles==========*/
 
 .navbar{
-    background: #2776EA;
-    position: fixed;
-    padding: 15px 0;
+   /*background: #2776EA;*/
+   position: fixed;
+    padding: 30px 0;
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    transition: .2s;
+}
+
+.added{
+    background-color: #2776EA;
+    padding: 15px 0;
+    box-shadow: 0 5px rgb(0, 0, 0, 0.1);
 }
 
 .navbar .max-width{
@@ -33,10 +40,27 @@
     justify-content: space-between;
 }
 
+.logo{
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    transition: .2s;
+}
+
+.navbar .logo a span{
+    color: #2776EA;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+}
+
+.navbar.added .logo a span{
+    color: #fff;
 }
 
 .navbar .menu li{
@@ -49,6 +73,11 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: .2s;
+}
+
+.navbar .menu li a:hover{
+    color: #2776EA;
 }
 
 /*==========Home Section Styles==========*/
@@ -96,5 +125,5 @@
 .home .home-content .text-3 span{
     color: #2776EA;
     font-weight: 600;
-    text-shadow: 1px, 1px, 2px;
+    text-shadow: 1px, 1px, 2px rgb(0, 0, 0, 0.2);
 }
