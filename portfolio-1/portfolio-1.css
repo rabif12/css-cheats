@@ -20,7 +20,7 @@
 /*==========navbar styles==========*/
 
 .navbar{
-    background: crimson;
+    background: #2776EA;
     position: fixed;
     padding: 15px 0;
     width: 100%;
@@ -52,3 +52,49 @@
 }
 
 /*==========Home Section Styles==========*/
+.fr-logo{
+    height: 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/*==========Home Section Styles==========*/
+
+.home{
+    display: flex;
+    background: url("./img/hd-coding-bg-1.jfif") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.home .home-content .text-1{
+    font-size: 30px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home .home-content .text-3{
+    font-size: 30px;
+}
+
+.home .home-content .text-3 span{
+    color: #2776EA;
+    font-weight: 600;
+    text-shadow: 1px, 1px, 2px;
+}
