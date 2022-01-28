@@ -4,25 +4,27 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    text-decoration: none;
 }
 
 --root{
-    --poppins-font:font-family: 'Poppins', sans-serif;
-    --flex: display:flex, justify-content: center, align-items: center;
+    --poppins-font:'Poppins', sans-serif;
 }
 
 .max-width{
     max-width: 1300px;
-    padding: 0 80 px;
+    padding: 0 80px;
     margin: auto;
 }
 
+/*==========navbar styles==========*/
+
 .navbar{
+    background: crimson;
     position: fixed;
-    width: 100%;
     padding: 15px 0;
-    background: cadetblue;
-    font-family: var(--poppins-font);
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar .max-width{
@@ -48,9 +50,5 @@
     font-weight: 500;
     margin-left: 25px;
 }
-.section{
-    background-color: black;
-    height: 100vh;
-    color: white;
-    display: var(--flex);
-}
+
+/*==========Home Section Styles==========*/
