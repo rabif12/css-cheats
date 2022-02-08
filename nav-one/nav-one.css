@@ -6,6 +6,7 @@
 
 :root{
     --main-font:'Poppins', sans-serif;
+    --main-color:rgb(0, 158, 250);
 }
 
 
@@ -86,7 +87,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: blue;
+        background-color: var(--main-color);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -94,11 +95,13 @@ nav{
         font-size: 2rem;
         width: 60%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in;
 
     }
     .nav-links li{
         opacity: 0;
+    
+        transition: transform 0.5s ease-in;
     }
     .burger{
         display: block;
@@ -107,4 +110,16 @@ nav{
 
 .nav-active{
     transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
