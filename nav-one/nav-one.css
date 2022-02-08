@@ -49,3 +49,17 @@ nav{
     font-weight: bold;
     font-size: 1em;
 }
+
+/*===== hamburger menu =====*/
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 1px 1px 2px black;
+}
