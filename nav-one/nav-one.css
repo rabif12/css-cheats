@@ -27,4 +27,25 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 2em;
+    user-select: none;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    user-select: none;
+}
+
+.nav-links li{
+    list-style: none;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1em;
 }
