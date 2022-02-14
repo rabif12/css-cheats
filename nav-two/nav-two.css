@@ -94,6 +94,17 @@ body{
     font-size: 22px;
 }
 
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    box-shadow: 0 5px 10px black;
+}
+
 .sidebar ul li a{
     text-decoration: none;
     color: var(--font-color);
@@ -166,4 +177,20 @@ body{
     font-size: 20px;
 
     border-radius: 12px;
+}
+
+/* home content styles*/
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.home_content .text{
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--light-color);
+    margin: 12px;
 }
